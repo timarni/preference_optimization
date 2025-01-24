@@ -3,7 +3,7 @@ import json
 import random
 from openai import OpenAI
 
-def meditron_inference(path_to_prompts = '../results/parsed_prompts_tasks_x_topics.json', nbr_return_sequences = 10, temp = 0.9):
+def meditron_inference(path_to_prompts = '../results/parsed_prompts_tasks_x_topics_x_answerstyles.json', nbr_return_sequences = 10, temp = 0.9):
     # Open and read the JSON file
     with open(path_to_prompts, 'r') as file:
         data = json.load(file)
